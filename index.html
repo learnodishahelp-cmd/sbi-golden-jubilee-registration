@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=yes" />
+    <title>SBI Golden Jubilee Registration</title>
+    <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+    <div class="container">
+        <!-- Event Banner -->
+        <div class="banner">
+            <div class="sbi-logo">
+                <span>🏦</span>
+            </div>
+            <h1>SBI Staff Association</h1>
+            <h2>Golden Jubilee Celebration</h2>
+            <div class="venue">
+                <span>📍</span> Barabati Indoor Stadium, Cuttack
+            </div>
+            <div class="date">
+                <span>📅</span> This Sunday
+            </div>
+        </div>
+
+        <!-- Registration Form -->
+        <form id="registrationForm" class="registration-form">
+            <div class="form-group">
+                <label for="staffName">Staff Name *</label>
+                <input type="text" id="staffName" name="staffName" required 
+                       placeholder="Enter your full name" />
+            </div>
+
+            <div class="form-group">
+                <label for="pfNumber">PF Number *</label>
+                <input type="text" id="pfNumber" name="pfNumber" required 
+                       placeholder="Enter your PF number" />
+                <small class="help-text">This is your unique identifier</small>
+            </div>
+
+            <div class="form-group">
+                <label for="branchName">Branch Name *</label>
+                <input type="text" id="branchName" name="branchName" required 
+                       placeholder="Enter your branch name" />
+            </div>
+
+            <div class="form-group">
+                <label for="boardingPlace">Place of Boarding / Pickup Location *</label>
+                <input type="text" id="boardingPlace" name="boardingPlace" required 
+                       placeholder="Where will you board the vehicle?" />
+            </div>
+
+            <div class="form-group">
+                <label for="mobileNumber">Mobile Number *</label>
+                <input type="tel" id="mobileNumber" name="mobileNumber" required 
+                       placeholder="Enter your mobile number" />
+            </div>
+
+            <div class="form-group">
+                <label for="personsCount">Number of persons travelling</label>
+                <input type="number" id="personsCount" name="personsCount" min="1" max="10" 
+                       placeholder="Including yourself" />
+            </div>
+
+            <div class="form-group">
+                <label>Vehicle Requirement</label>
+                <div class="radio-group">
+                    <label class="radio-option">
+                        <input type="radio" name="vehicleRequired" value="Yes" />
+                        Yes
+                    </label>
+                    <label class="radio-option">
+                        <input type="radio" name="vehicleRequired" value="No" checked />
+                        No
+                    </label>
+                </div>
+            </div>
+
+            <div class="form-group">
+                <label for="remarks">Special Remarks</label>
+                <textarea id="remarks" name="remarks" rows="3" 
+                          placeholder="Any special requirements or remarks"></textarea>
+            </div>
+
+            <button type="submit" class="submit-btn">Register Now</button>
+        </form>
+
+        <!-- Status Message -->
+        <div id="statusMessage" class="status-message hidden"></div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

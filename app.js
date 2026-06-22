@@ -2,7 +2,7 @@ class RegistrationApp {
     constructor() {
         this.form = document.getElementById('registrationForm');
         this.statusMessage = document.getElementById('statusMessage');
-        this.webhookURL = 'https://mkn8n.app.n8n.cloud/webhook-test/71c73d44-a725-476b-b78c-112639dbd8b8';
+        this.webhookURL = 'https://hook.eu1.make.com/psn3ss613pqf32dqlby1v3wxazq9xmxd';
         
         this.initializeForm();
     }
